@@ -1,0 +1,252 @@
+@ font-face {
+    font-family: 'Anders';
+    src: url(Anders.ttf);
+}
+
+body {
+    font-family: 'New Rocker', 'Brush Script MT', cursive;
+    background-color: #ebaa8e;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+.titlebar {
+    background: #e486ea;
+    color: #436cbf;
+    text-align: center;
+    font-size: 200%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 50px;
+    line-height: 50px;
+    opacity: .8;
+    letter-spacing: 5px;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background: rgb(204, 153, 0);
+    /* Fall-back for browsers that don't support rgba */
+    
+    background: rgba(204, 153, 0, .8);
+    margin: 0;
+    margin-bottom: 2px;
+    padding: 0;
+    position: fixed;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 7%;
+    width: 100%;
+}
+
+li {
+    display: float: center;
+    background-color: #b22447;
+    color: #ccccff;
+    padding-right: 2%;
+    max-height: 25px;
+    width: 20%;
+    float: left;
+    text-align: center;
+    /*    position: relative;*/
+}
+
+ul li a {
+    color: #ccf;
+}
+
+li a:hover {
+    content:url(Experiments/underline.png)
+    position: relative;
+}
+
+
+li a:hover {
+    position: relative;
+}
+}
+/*
+li a:hover:before {
+    content: url(Experiments/underline.png);
+    
+
+    display: block;
+    position: absolute;
+    left: 123px;
+    
+    top: 56px;
+  
+}*/
+
+li a:visited {
+    color: color: #ccf;
+    ;
+}
+li a:active {
+    color: #d4865e;
+}
+/*
+li .dropdown a:hover {
+    border-bottom: none;
+    position: absolute;
+    width: 100%;
+}
+
+ul .dropdown a {
+    text-decoration: underline;
+}
+
+ul li ul {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+ul li ul li {
+    background: #ffc2ff;
+    display: block;
+    color: #cc9900;
+    width: 120px;
+    text-align: center;
+}
+
+ul li ul li:visted {
+    background: #ffc2ff;
+    color: #c90;
+}
+
+ul li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 2px;
+}
+
+ul .dropdown:hover a {
+    border-bottom: none;
+}
+*/
+
+img {
+    padding: 0 10%;
+    width: 80%;
+}
+.mainimg {
+    padding-top: 150px;
+}
+article {
+    padding-bottom: 20px;
+    border-bottom: 5px solid hsl(345, 100%, 35%);
+    background-image: url(top-border.png), url(greenies.7.png);
+    background-repeat: repeat-x, repeat;
+    /*margin-top: 36px;*/
+    /*
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-attachment: fixed;
+*/
+}
+article p {
+    color: hsl(140, 10%, 47%);
+    padding: 0 15% 3% 20%;
+}
+
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 1000%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 10%;
+	/*left: 25%;
+	width: 50%;*/
+	/*height: 50%;*/
+	padding: 16px;
+	/*border: 16px;*/
+	border-color:rgba(0, 0, 0, .8);
+	/*background-color: white;*/
+	z-index:1002;
+	overflow: auto;
+}
+
+.x_button {
+display: none;
+	position: absolute;
+	top: 10%;
+	/*left: 25%;
+	width: 50%;*/
+	/*height: 50%;*/
+	padding: 16px;
+	/*border: 16px;*/
+	border-color:rgba(0, 0, 0, .8);
+	/*background-color: white;*/
+	z-index:1003;
+	overflow: auto;
+	}
+
+.contact {
+    padding: 200px 15% 35% 20%;
+    font-size: 120%;
+    border: 2px solid hsl
+}
+.contact a {
+    color: hsl(140, 5%, 36%);
+}
+.news {
+    padding: 220px 0px 100px 25px;
+}
+.news h1 {
+    padding: 15px 15px;
+    color: #ffc2ff;
+    border-width: 4px;
+    border-style: dotted solid double dashed;
+    border-color: hsl(140, 25%, 30%);
+    float: left;
+}
+aside {
+    padding: 15px 10px 10px 10px;
+    float: right;
+}
+aside a:visited {
+    color: #ffc2ff;
+}
+.dropshadow {
+    border: 5px solid hsl(140, 100%, 95%);
+    box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, .6)
+}
+footer {
+    clear: both;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 15px solid #fadbf0;
+}
+ body {
+    font-size: 100%;
+}
+h1 {
+    font-size: 1.6em;
+}
+
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
