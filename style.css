@@ -87,7 +87,6 @@ li a:hover:before {
 
 li a:visited {
     color: color: #ccf;
-    ;
 }
 li a:active {
     color: #d4865e;
@@ -139,8 +138,37 @@ img {
     width: 80%;
 }
 .mainimg {
-    padding-top: 150px;
+    padding: 150px 10% 0 10%;
+    width: 80%;
 }
+
+
+canvas {
+    padding: 50px 10% 0 10%;
+    width: 80%;
+}
+.playground_link{
+
+}
+
+.playground_link_text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+}
+
+a:hover .playground_link {
+  visibility: visible;
+  opacity: 1;
+}
+
+
 article {
     padding-bottom: 20px;
     border-bottom: 5px solid hsl(345, 100%, 35%);
@@ -157,6 +185,8 @@ article p {
     color: hsl(140, 10%, 47%);
     padding: 0 15% 3% 20%;
 }
+
+
 
 .black_overlay{
 	display: none;
