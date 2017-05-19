@@ -280,3 +280,15 @@ h2 {
     font-size: 2em;
     margin-bottom: 1em;
 }
+
+button {
+    padding: 15px 32px;
+    font-size: 5em;
+    background-color: #a4f9d2;
+    border-radius: 30px;
+    font-family: 'New Rocker', 'Brush Script MT', cursive;
+    color: hsl(140, 10%, 47%);
+    background-color: lightblue;
+}
+
+
