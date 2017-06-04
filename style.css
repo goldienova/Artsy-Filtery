@@ -31,7 +31,7 @@ nav {
     height: 50px;
     background: rgb(204, 153, 0);
     /* Fall-back for browsers that don't support rgba */
-    
+
     background: rgba(204, 153, 0, .8);
     margin: 0;
     margin-bottom: 2px;
@@ -75,14 +75,14 @@ li a:hover {
 /*
 li a:hover:before {
     content: url(Experiments/underline.png);
-    
+
 
     display: block;
     position: absolute;
     left: 123px;
-    
+
     top: 56px;
-  
+
 }*/
 
 li a:visited {
@@ -139,7 +139,7 @@ img {
 }
 .mainimg {
     padding: 150px 10% 0 10%;
-    width: 80%;
+    width: 70%;
 }
 
 
