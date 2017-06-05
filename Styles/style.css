@@ -223,4 +223,9 @@ button {
     background-color: lightblue;
 }
 
+img {
+    margin: auto;
+    display: block;
+}
+
 
