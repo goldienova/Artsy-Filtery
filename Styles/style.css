@@ -30,8 +30,7 @@ nav {
     width: 100%;
     height: 50px;
     background: rgb(204, 153, 0);
-    /* Fall-back for browsers that don't support rgba */
-    
+
     background: rgba(204, 153, 0, .8);
     margin: 0;
     margin-bottom: 2px;
@@ -55,7 +54,6 @@ li {
     width: 20%;
     float: left;
     text-align: center;
-    /*    position: relative;*/
 }
 
 ul li a {
@@ -72,18 +70,8 @@ li a:hover {
     position: relative;
 }
 }
-/*
-li a:hover:before {
-    content: url(Experiments/underline.png);
-    
 
-    display: block;
-    position: absolute;
-    left: 123px;
-    
-    top: 56px;
-  
-}*/
+
 
 li a:visited {
     color: color: #ccf;
@@ -91,47 +79,6 @@ li a:visited {
 li a:active {
     color: #d4865e;
 }
-/*
-li .dropdown a:hover {
-    border-bottom: none;
-    position: absolute;
-    width: 100%;
-}
-
-ul .dropdown a {
-    text-decoration: underline;
-}
-
-ul li ul {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-}
-
-ul li ul li {
-    background: #ffc2ff;
-    display: block;
-    color: #cc9900;
-    width: 120px;
-    text-align: center;
-}
-
-ul li ul li:visted {
-    background: #ffc2ff;
-    color: #c90;
-}
-
-ul li:hover ul {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    margin-top: 2px;
-}
-
-ul .dropdown:hover a {
-    border-bottom: none;
-}
-*/
 
 img {
     padding: 0 10%;
@@ -139,7 +86,7 @@ img {
 }
 .mainimg {
     padding: 150px 10% 0 10%;
-    width: 80%;
+    width: 70%;
 }
 
 
@@ -172,14 +119,9 @@ a:hover .playground_link {
 article {
     padding-bottom: 20px;
     border-bottom: 5px solid hsl(345, 100%, 35%);
-    background-image: url(top-border.png), url(greenies.7.png);
+    background-image: url(../Assets/top-border.png), url(../Assets/greenies.7.png);
     background-repeat: repeat-x, repeat;
-    /*margin-top: 36px;*/
-    /*
-    background-repeat: repeat-x;
-    background-position: bottom;
-    background-attachment: fixed;
-*/
+
 }
 article p {
     color: hsl(140, 10%, 47%);
@@ -206,13 +148,8 @@ article p {
 	display: none;
 	position: absolute;
 	top: 10%;
-	/*left: 25%;
-	width: 50%;*/
-	/*height: 50%;*/
 	padding: 16px;
-	/*border: 16px;*/
 	border-color:rgba(0, 0, 0, .8);
-	/*background-color: white;*/
 	z-index:1002;
 	overflow: auto;
 }
@@ -221,13 +158,8 @@ article p {
 display: none;
 	position: absolute;
 	top: 10%;
-	/*left: 25%;
-	width: 50%;*/
-	/*height: 50%;*/
 	padding: 16px;
-	/*border: 16px;*/
 	border-color:rgba(0, 0, 0, .8);
-	/*background-color: white;*/
 	z-index:1003;
 	overflow: auto;
 	}
@@ -283,12 +215,17 @@ h2 {
 
 button {
     padding: 15px 32px;
-    font-size: 5em;
+    font-size: 3em;
     background-color: #a4f9d2;
     border-radius: 30px;
     font-family: 'New Rocker', 'Brush Script MT', cursive;
     color: hsl(140, 10%, 47%);
     background-color: lightblue;
+}
+
+img {
+    margin: auto;
+    display: block;
 }
 
 
