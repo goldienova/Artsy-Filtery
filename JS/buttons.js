@@ -9,7 +9,7 @@ function drawButtons(){
   var pinkToggle = true;
 
   var img = new Image();
-  img.src = '4.Ghosts.jpg';
+  img.src = '../Assets/4.Ghosts.jpg';
 
 
   img.onload = function () {
@@ -21,7 +21,7 @@ function drawButtons(){
 
     var imgData = imgToConvert.data;
     var resetData = resetImg.data;
-    var counter = 0;   
+    var counter = 0;
 
     var width = 4236;
     var height = 800
@@ -67,27 +67,19 @@ function drawButtons(){
       forwards += 20;
     }
 
-    ctx.putImageData(imgToConvert, 0, 0)    
+    ctx.putImageData(imgToConvert, 0, 0)
 
   }
 
   var sand = function(){
     for (var i = 0; i < imgData.length; i += 4) {
-      //console.log("BEFORE", imgData[i])
       imgData[i] = 255 - Math.random() * imgData[i];
-      //console.log("AFTER", imgData[i])
-      // imgData[i + 1] = resetData[i +1] - (Math.random() * (255 - 153) + 100);
-      // imgData[i + 2] = resetData[i + 2] - Math.random() * 204;
       imgData[i+1] = 255 - Math.random() * imgData[i+1];
       imgData[i+2] = 255 - Math.random() * imgData[i+2];
     }
     ctx.putImageData(imgToConvert, 0, 0);
 
-    console.log("experiment")
   }
-
-  //Math.random() * (Max - Min) + Min
-  //resetData[i]  === num btwn 0-255
 
   var coogi = function(){
     var backwards = 0;
@@ -113,7 +105,6 @@ function drawButtons(){
 
     for(var i = 0; i < imgData.length; i += (width/12-1)){
       for(var x=0; x<200; x+=4){
-        //console.log('hi')
         imgData[i + x] = 255 - imgData[i + x];
         imgData[i + x + 1] = 255 - imgData[i + x + 1];
         imgData[i + x + 2] = 255 - imgData[i + x + 2];
@@ -121,7 +112,7 @@ function drawButtons(){
     }
 
 
-    ctx.putImageData(imgToConvert, 0, 0)  
+    ctx.putImageData(imgToConvert, 0, 0)
 
   }
 
@@ -129,7 +120,6 @@ function drawButtons(){
 
     for(var i = imgData.length; i > 0; i -= (width/3 -1)){
       for(var x=0; x<width; x+=32){
-        //console.log('hi')
         imgData[i + x] = 255 - imgData[i + x];
         imgData[i + x + 1] = 255 - imgData[i + x + 1];
         imgData[i + x + 2] = 255 - imgData[i + x + 2];
@@ -137,7 +127,7 @@ function drawButtons(){
     }
     console.log("in F")
 
-    ctx.putImageData(imgToConvert, 0, 0)  
+    ctx.putImageData(imgToConvert, 0, 0)
 
   }
 
@@ -162,7 +152,7 @@ function drawButtons(){
       }
     }
 
-    ctx.putImageData(imgToConvert, 0, 0)  
+    ctx.putImageData(imgToConvert, 0, 0)
 
   }
 
@@ -171,7 +161,7 @@ var autoplay;
 var on = true;
 
   var static = function(){
-  
+
   if(on){
     autoplay = setInterval(g, 200)
     on = false;
@@ -180,7 +170,7 @@ var on = true;
       reset();
       on = true;
     }
-   
+
   }
 
 
@@ -199,11 +189,11 @@ var on = true;
 
     for (var i = 0; i < imgData.length; i += 4) {
       imgData[i] = resetData[i];
-      imgData[i + 1] = resetData[i + 1];    
+      imgData[i + 1] = resetData[i + 1];
       imgData[i + 2] = resetData[i + 2];
       imgData[i + 4] = resetData[i + 4];
     }
-    
+
     ctx.putImageData(resetImg, 0, 0);
     clearInterval(autoplay);
 
@@ -217,10 +207,10 @@ var on = true;
   btn.addEventListener('click', highlighter);
 
   var btn = document.getElementById('snow');
-  btn.addEventListener('click', snow) 
+  btn.addEventListener('click', snow)
 
   var btn = document.getElementById('sand');
-  btn.addEventListener('click', sand) 
+  btn.addEventListener('click', sand)
 
   var btn = document.getElementById('coogi');
   btn.addEventListener('click', coogi)
@@ -239,7 +229,7 @@ var on = true;
   invertbtn.addEventListener('click', invert);
 
   var btn = document.getElementById('reset');
-  btn.addEventListener('click', reset)  
+  btn.addEventListener('click', reset)
 
 
   };
